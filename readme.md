@@ -42,7 +42,7 @@ if ( file_exists( 'wp-content/plugins/Errrr/inc/err-wp-config.inc.php' ) ) {
 	if ( ! defined( 'WP_DEBUG' ) ) {
 		define( 'WP_DEBUG', true );
 	}
-	define( 'ERRRR_REMOTE', 'https://example.com/wp-json/webhooks/v1/errrr' )
+	define( 'ERRRR_REMOTE', 'https://example.com/wp-json/webhooks/v1/errrr' );
 	require_once( 'wp-content/plugins/Errrr/inc/err-wp-config.inc.php' );
 }
 /* End Errrr */
