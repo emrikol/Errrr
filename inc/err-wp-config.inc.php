@@ -1,14 +1,5 @@
 <?php
 if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {
-	@error_reporting( E_ALL );
-	@ini_set( 'log_errors', true );
-	@ini_set( 'log_errors_max_len', '0' );
-
-	define( 'WP_DEBUG_LOG', true );
-	define( 'WP_DEBUG_DISPLAY', true );
-	define( 'CONCATENATE_SCRIPTS', false );
-	define( 'SAVEQUERIES', true );
-
 	function errrr_log( $error ) {
 		error_log( $error );
 		$ch = curl_init();
